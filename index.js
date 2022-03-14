@@ -85,13 +85,13 @@ document.getElementById("default").classList.add("hide");  // problem line
 const fetch_Api= function(){
     const search_value=search_feild.value;
     // document.getElementById("default").classList.add("hide");
-     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search_value}&appid=e00ab302f688143396b68556a5567a23`).then(json_value).then(handle_data);
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search_value}&appid=ec59daf47e40d5a2070885c1a23451ce`).then(json_value).then(handle_data);
 }
 document.getElementById("search_btn").addEventListener('click',fetch_Api);
 const enter_fn=function(e){
   if(e.key =='Enter'){
     // document.getElementById("default").classList.add("hide");
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=e00ab302f688143396b68556a5567a23`).then(json_value).then(handle_data);
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=ec59daf47e40d5a2070885c1a23451ce`).then(json_value).then(handle_data);
   }
 }
 
@@ -178,12 +178,12 @@ parent_container.appendChild(div_el);
 
 const fetch_Location=function(){
     const loaction_value=document.getElementById("location_feild").value;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loaction_value}&appid=e00ab302f688143396b68556a5567a23`).then(json_value).then(location_lat);
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loaction_value}&appid=ec59daf47e40d5a2070885c1a23451ce`).then(json_value).then(location_lat);
 }
 
 const enter_location=function(e){
  if(e.key =='Enter'){
-     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=e00ab302f688143396b68556a5567a23`).then(json_value).then(location_lat);
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=ec59daf47e40d5a2070885c1a23451ce`).then(json_value).then(location_lat);
  }
 }
 
